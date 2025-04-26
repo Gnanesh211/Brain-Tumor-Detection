@@ -1,2 +1,1 @@
-"Download the model file from: https://drive.google.com/file/d/xyz123/view?usp=sharing" 
-"Download the model file from: https://drive.google.com/file/d/1XKhMuY7avZ_Gjq39_RT6P7TMNu3GKhh_/view?usp=sharing" 
+"Download the model file from: https://drive.google.com/file/d/1XKhMuY7avZ_Gjq39_RT6P7TMNu3GKhh_/view?usp=sharing"
