@@ -1,0 +1,149 @@
+body {
+  background-color: #121212;
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  text-align: center;
+  width: 500px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.dropzone {
+  background-color: #1f1f1f;
+  border: 2px dashed #6f42c1;
+  padding: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropzone.active {
+  background-color: #2a2a2a;
+  border-color: #8e44ad;
+}
+
+.dropzone p {
+  margin: 0;
+  color: #aaa;
+}
+
+.dropzone span {
+  color: #6f42c1;
+  text-decoration: underline;
+}
+
+.image-preview {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.image-preview img {
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid #6f42c1;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.image-preview img:hover {
+  transform: scale(1.05);
+}
+
+.predict-button {
+  background-color: #6f42c1;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.predict-button:hover {
+  background-color: #563d7c;
+  transform: scale(1.05);
+}
+
+.prediction-result {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.prediction-result h2 {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.prediction-result ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prediction-result li {
+  padding: 5px 0;
+}
+
+.loading-icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.dots div {
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0 3px;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.dots div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dots div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dots div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+

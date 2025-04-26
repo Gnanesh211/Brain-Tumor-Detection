@@ -1,0 +1,5 @@
+__pycache__
+*.pyc
+env/
+frontend/node_modules/
+backend/model/Brain Tumors Classifier.h5
