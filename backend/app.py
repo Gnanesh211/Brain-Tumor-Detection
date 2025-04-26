@@ -33,6 +33,13 @@ model.compile(Adamax(learning_rate=0.001), loss='categorical_crossentropy', metr
 # Define the class labels
 class_labels = ['Glioma', 'Meningioma', 'No Tumor', 'Pituitary']
 
+def preprocess_image(image, target_size=(224, 224)):
+    """Resize and normalize the image for model prediction."""
+    image = image.resize(target_size)
+    image = img_to_array(image)
+    image = np.expand_dims(image, axis=0)  # Add batch dimension
+    image /= 255.0  # Normalize if required by the model
+    return image
 @app.route('/predict', methods=['POST'])
 def predict():
     if 'file' not in request.files:
