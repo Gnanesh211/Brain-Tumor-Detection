@@ -26,7 +26,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://brain-tumor-detection-2-jd40.onrender.com/predict", {
+      const response = await fetch("http://localhost:5000/predict", {
         method: "POST",
         body: formData,
       });
