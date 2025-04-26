@@ -3,4 +3,4 @@ gunicorn==20.1.0
 tensorflow
 numpy
 h5py
-"Pillow" 
+Pillow 
